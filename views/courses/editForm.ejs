@@ -1,0 +1,24 @@
+<% layout("layouts/boilerplate") %> 
+
+<form method="POST" action="/courses/<%= course._id  %>?_method=PUT">
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nazwa</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name" value="<%= course.name %>" name="name" >
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Ilość minut</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="time" value="<%=course.time %>" name="time" >
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Image</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="img" value="<%= course.image %>" name="image">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Opis</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" name="info"><%= course.info %> </textarea>
+</div>
+
+<button class="btn btn-outline-secondary">Edytuj</button>
+</form>
+
+

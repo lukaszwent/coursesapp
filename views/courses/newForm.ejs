@@ -1,0 +1,33 @@
+<% layout("layouts/boilerplate") %> 
+
+<form method="POST" action="/courses/">
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nazwa</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nazwa kursu" name="name">
+</div>
+<div class="mb-3">
+<div class="row d-flex flex-column flex-md-row">
+    <div class="col-md-10">
+    <label for="exampleFormControlInput1" class="form-label">Ilość godzin</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Czas trwania kursu" name="time">
+</div>
+<div class="col-md-2 d-flex align-items-end">
+    <select class="form-select" aria-label="Default select example" name="timeFormat">
+        <option value="hours">godzin</option>
+        <option value="minutes">minut</option>
+      </select>
+    </div>
+</div>
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Zdjęcie</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="URL do zdjęcia" name="image">
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Opis</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" name="info"></textarea>
+  </div>
+
+<button class="btn btn-outline-secondary">Utwórz</button>
+</form>

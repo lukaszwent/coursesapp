@@ -1,0 +1,69 @@
+
+.ownStyle img{
+    max-width:100%;
+    max-height:200px;
+}
+
+.progressBarContainer{
+    height: 25px;
+    background-color: #CCC;
+    position: relative;
+    border-radius: 7px;
+}
+.progressBarContainer .progressBar{
+    position: absolute;
+    height: 100%;
+    border-radius: 7px;
+    background-color: rgb(79, 182, 65);
+    animation: progress-animation 5s forwards;
+}
+
+:root {
+    --my-start-width: 0;
+    --my-end-width: 280px;
+}
+
+@keyframes progress-animation{
+    0% { width: var(--my-start-width); }
+    100% { width: var(--my-end-width);}
+}
+
+.customStyle{
+    pointer-events: none;
+    
+    opacity: 0.5;
+}
+
+.progress {
+    position: relative;
+    width: 210px;
+    height: 30px;
+    background: #9cbab4;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress__fill {
+    width: 0%;
+    height: 100%;
+    background: #009579;
+    transition: all 0.2s;
+  }
+  
+  .progress__text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px "Quicksand", sans-serif;
+    color: #ffffff;
+  }
+  
+  .prog{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px "Quicksand", sans-serif;
+    color: #ffffff;
+  }
